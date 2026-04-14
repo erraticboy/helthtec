@@ -1,11 +1,12 @@
 services:
   - type: web
-    name: healthtech
-    runtime: node
+    name: healthgap-ai
+    env: node
+    plan: free
     buildCommand: npm install && npm run build
-    startCommand: npm start
+    startCommand: npm run start
     envVars:
-      - key: NODE_ENV
-        value: production
-      - key: NEXT_PUBLIC_API_URL
-        value: https://healthtech.onrender.com
+      - key: NODE_VERSION
+        value: 20
+      - key: PORT
+        value: 10000
