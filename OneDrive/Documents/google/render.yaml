@@ -1,9 +1,9 @@
 services:
   - type: web
-    name: healthgap-ai
+    name: healthgap-ai-erraticboy
     env: node
     plan: free
-    rootDir: OneDrive/Documents/google
+    rootDir: "OneDrive/Documents/google"
     buildCommand: npm install && npm run build
     startCommand: npm start
     envVars:
