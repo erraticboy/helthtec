@@ -3,10 +3,11 @@ services:
     name: healthgap-ai
     env: node
     plan: free
+    rootDir: OneDrive/Documents/google
     buildCommand: npm install && npm run build
-    startCommand: npm run start
+    startCommand: npm start
     envVars:
       - key: NODE_VERSION
-        value: 20
+        value: "20"
       - key: PORT
-        value: 10000
+        value: "10000"
